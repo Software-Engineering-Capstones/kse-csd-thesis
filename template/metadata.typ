@@ -28,41 +28,39 @@
 // Metadata of the document
 //
 #let doc= (
-  title    : "Capstone Project Template",
-  subtitle : "Longer Subtitle",
+  title    : "MovieCrush",
+  subtitle : "Movie Tracking Platform with Personalized Recommendations, Detailed Ratings, and Social Features",
   author: (
-    name        : "Firstname Lastname",
-    email       : "firstname.lastname@kse.org.ua",
+    name        : "Anastasiia Syvak",
+    email       : "asyvak@kse.org.ua",
     degree      : "Bachelor",
     affiliation : "KSE",
     place       : "Kyiv",
-    url         : "https://synd.hevs.io",
-    signature   : image("/resources/img/signature.svg", width:3cm),
+    url         : "https://github.com/Anastasiiasyvak",
+    signature   : image("resources/img/signature.svg", width:3cm),
   ),
-  keywords : ("KSE", "Software Engineering", "Thesis", "Template"),
-  version  : "v0.1.0",
 )
 
 #let summary-page = (
   logo: project-logo,
   //one sentence with max. 240 characters, with spaces.
   objective: [
-    The objective of this thesis is to analyze and improve the performance of a predictive maintenance system in industrial IoT environments by implementing advanced data processing algorithms and evaluating their effectiveness through case studies.
+    The goal of this thesis is to design and build MovieCrush - a mobile platform that combines personalized movie recommendations using collaborative filtering and LLMs, detailed ratings and social features.
   ],
   //summary max. 1200 characters, with spaces.
   content: [
-   This bachelor thesis focuses on the optimization of predictive maintenance systems within industrial IoT environments. Predictive maintenance is a key aspect of modern manufacturing, enabling the anticipation of equipment failures and reducing downtime. The research begins by outlining the theoretical foundations of predictive maintenance, including sensor data acquisition, processing, and analysis. The study then introduces advanced data processing algorithms, such as machine learning techniques, to enhance prediction accuracy and reliability. A case study approach is employed, using real-world industrial data to evaluate the system’s performance. The results demonstrate significant improvements in fault detection rates and decision-making efficiency. The thesis concludes by discussing the implications for industry and providing recommendations for future development. This work aims to contribute to the advancement of smart maintenance systems, supporting industry 4.0 transformation efforts.
+    This thesis describes the design and development of MovieCrush, a mobile application for tracking movies and TV series. The core problem it addresses is that existing platforms like Letterboxd or IMDb either lack personalization or social interaction that feels meaningful. MovieCrush combines three main components: a hybrid recommendation system that uses ALS-based collaborative filtering for users with watch history and a cold start strategy for new users, with Gemini re-ranking the final results; a detailed rating system where users score films across five dimensions; and social features including follows, a Soulmate algorithm that finds users with similar taste using cosine similarity and a Wrapped feature with personal yearly statistics. The backend is built with Node.js and PostgreSQL, the mobile app with React Native, and the ML service runs as a separate Python FastAPI microservice.
   ],
-  address: [HES-SO Valais Wallis • rue de l'Industrie 23 • 1950 Sion \ +41 58 606 85 11 • #link("mailto"+"info@hevs.ch")[info\@hevs.ch] • #link("www.hevs.ch")[www.hevs.ch]]
+  address: [Kyiv School of Economics • Mykoly Shpaka St, 3 • Kyiv, Ukraine \ +38 073 248 69 76 • #link("mailto"+"info@kse.ua")[info\@kse.ua] • #link("https://kse.ua")[kse.ua]]
 )
 
 #let professor= (
   affiliation: "KSE",
-  name: "Isaac Newton, PhD",
-  email: "inewton@kse.org.ua",
+  name: "Denys Zavhorodnii",
+  email: "dzavhorodnii@kse.org.ua",
 )
 #let expert= (
-  affiliation: "Company",
+  affiliation: "KSE",
   name: "Expert Name",
   email: "expert@domain.ua",
 )
@@ -72,34 +70,34 @@
   specialisation: none,
 )
 #if option.lang == "de" {
-  school.name = "Hochschule für Ingenieurwissenschaften Wallis, HES-SO"
-  school.orientation = "Systemtechnik"
+  school.name = "Kiewer Hochschule für Wirtschaftswissenschaften"
+  school.orientation = "Wirtschaft"
   school.specialisation = "Infotronics"
 } else if option.lang == "fr" {
-  school.name = "Haute École d'Ingénierie du Valais, HES-SO"
-  school.shortname = "HEI-Vs"
-  school.orientation = "Systèmes industriels"
+  school.name = "École d'économie de Kyiv"
+  school.shortname = "EDK"
+  school.orientation = "Économie"
   school.specialisation = "Infotronics"
 } else {
-  school.name = "University1 of Applied Sciences Western Switzerland, HES-SO Valais Wallis"
-  school.shortname = "HEI-VEFEs"
+  school.name = "Kyiv School of Economics"
+  school.shortname = "KSE"
   school.orientation = "Software Engineering & Business Analysis"
 }
 
 #let date = (
-  submission: datetime(year: 2025, month: 8, day: 14),
-  mid-term-submission: datetime(year: 2025, month: 5, day: 2),
+  submission: datetime(year: 2026, month: 6, day: 16),
+  mid-term-submission: datetime(year: 2026, month: 6, day: 3),
   today: datetime.today(),
 )
 
 #let logos = (
   main: project-logo,
   topleft: if option.lang == "fr" or option.lang == "de" {
-    image("/resources/img/logos/hei-defr.svg", width: 6cm)
+    image("resources/img/logos/hei-defr.svg", width: 6cm)
   } else {
-    image("/resources/img/logos/kse_logo_horizontal_primary.png", width: 6cm)
+    image("resources/img/logos/kse_logo_horizontal_primary.png", width: 6cm)
   },
-   topright: image("/resources/img/logos/zeva.svg", width: 5cm),
+   topright: image("resources/img/logos/zeva.svg", width: 5cm),
 )
 
 
@@ -116,7 +114,7 @@
 )
 
 #let gloss    = true
-#let appendix = false
+#let appendix = true
 #let bib = (
   display : true,
   path  : "/tail/bibliography.bib",
