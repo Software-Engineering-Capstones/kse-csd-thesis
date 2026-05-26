@@ -17,6 +17,8 @@ I really want to thank the EBD27 and BE27, and my Verkhovyna company. Thank you 
 
 Thank you to my friend from Italy, Gabriel, whom I met just before the full-scale invasion started - for helping me feel more confident, for every Eurovision night, for respecting my family and my country, and for the invitation to Italy. Thank you also to my friend from Spain, Markel - I'm sure we will meet someday too.
 
-Thank you to Polina Mamchur, Sofia Krotova, Yaroslava Mala and Kateryna Shashkina for every moment we went through together, for finding something positive even during the worst deadline weeks, and for always helping.
+Thank you to Polina Mamchur, Sofiіa Tyshchenko, Sofiіa Krotova, Yaroslava Mala and Kateryna Shashkina for every moment we went through together, for finding something positive even during the worst deadline weeks, and for always helping.
+
+I also want to thank Kateryna Pyvovarova for our conversation on the 5th floor of KSE - it was you who came up with the Soulmate feature idea, and I'm really glad that conversation happened.
 
 Thank you to absolutely everyone who came into my life during these years and made it the best it could be - in such difficult times.
